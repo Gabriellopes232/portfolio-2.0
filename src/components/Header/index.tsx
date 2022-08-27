@@ -13,8 +13,8 @@ const Header: React.FC = () => {
             gap: '2%'
         }}>
             <Link href='/'>Profile</Link>
-            <Link href='/blog'>Blog</Link>
-            <Link href='/projects'>Projects</Link>
+            <Link href='/blog/blog'>Blog</Link>
+            <Link href='/projects/projects'>Projects</Link>
             <a href="https://twitter.com/Gabriellopesxz" target="_blank" rel="noreferrer"><TablerBrandTwitter /></a>
             <a href="https://www.instagram.com/gabriellopesxz/" target="_blank" rel="noreferrer"><FeInstagram /></a>
             <a href="https://github.com/Gabriellopes232" target="_blank" rel="noreferrer"><MdiGithub /></a>
