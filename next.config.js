@@ -4,8 +4,7 @@ const nextConfig = {
   swcMinify: true,
 }
 
-export const pageExtensions = ['page.tsx', 'page.ts', 'page.jsx', 'page.js']
-
-export default nextConfig
-
-
+module.exports = {
+  nextConfig,
+  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js']
+}
