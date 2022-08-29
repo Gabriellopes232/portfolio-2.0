@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: grid;
   padding: 2em;
-  justify-items: initial;
-  margin-left: 15em;
+  margin-left: 5em;
   gap: 15%;
   background: ${(props) => props.theme.colors.background};
 `;
