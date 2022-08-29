@@ -1,3 +1,4 @@
+import Curriculum from "../../components/pages/curriculum"
 import { Container } from "./styles"
 
 const Profile = () => {
@@ -15,6 +16,8 @@ const Profile = () => {
             </p>
             <p>Find me on <a href="https://twitter.com/Gabriellopesxz" target="_blank" rel="noreferrer">Twitter</a>, <a href="https://github.com/Gabriellopes232" target="_blank" rel="noreferrer">GitHub</a>.</p>
             <p>Mail me at <a href="mailto:gabriel.lopes.nascimento.dev@gmail.com">gabriel.lopes.nascimento.dev@gmail.com</a>.</p>
+
+            <Curriculum />
 
             <footer>
                 © 2022 - present www.gabriellopes.dev.com - All Rights Reserved.
