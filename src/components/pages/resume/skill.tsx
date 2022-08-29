@@ -1,3 +1,5 @@
+import { RootSkillCard, SkillCard } from "./styles"
+
 const SkillsContainer: React.FC = () => {
     interface SkillsProps {
         id: number
@@ -38,9 +40,9 @@ const SkillsContainer: React.FC = () => {
     ]
     return (
         <>
-            <section>
+            <RootSkillCard >
                 {skills.map(skill => (
-                    <section key={skill.reference}>
+                    <SkillCard key={skill.reference}>
                         <sub>
                             <h5>{skill.skill}</h5>
                             <span>Exp.years: {skill.experience}</span>
@@ -54,9 +56,9 @@ const SkillsContainer: React.FC = () => {
                                 reference:
                             </a>
                         </sub>
-                    </section>
+                    </SkillCard>
                 ))}
-            </section>
+            </RootSkillCard >
         </>
     )
 }
