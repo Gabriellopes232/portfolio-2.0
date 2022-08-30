@@ -22,12 +22,14 @@ export const RootSkillCard = styled.div`
 export const SkillCard = styled.section`
     width: 370px;
 
+    max-width: 500px;
+
     display: -webkit-inline-box;
 
     padding: 0.9rem 1rem;
 
     background-color:#88888808;
-
+   
     border-radius: 0.8rem;
 
     sub {
