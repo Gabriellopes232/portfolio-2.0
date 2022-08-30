@@ -32,18 +32,20 @@ export const SkillCard = styled.section`
    
     border-radius: 0.8rem;
 
-    sub {
+    section {
       display: grid;
       width: 49.5%;
       height: 100%;
+      max-height: 400px;
       margin: 0;
 
       color: ${(props) => props.theme.colors.text};
 
-      span {
+      p {
          display: inline-block;
          font-size: 0.8rem;
          font-weight: 400;
+         line-height: 150%;
          
          .detail {
             font-weight: 600;
@@ -51,7 +53,7 @@ export const SkillCard = styled.section`
       }
 
       h5 {
-         font-size: 1.1rem;
+         font-size: 1rem;
          font-weight: 600;
       }
 
@@ -74,32 +76,12 @@ export const SkillCard = styled.section`
          font-weight: 500;
          :hover {
          color: ${(props) => props.theme.colors.links};
-         transition: 0.6s;
+         transition: 0.7s;
          opacity: 0.5;
-         animation-name: pulse;
-         animation-duration: 1s;
-         animation-timing-function: ease-out;
-         animation-direction: alternate;
-         animation-iteration-count: infinite;
-         animation-play-state: running;
-         @keyframes pulse {
-         0% {
          transform: scale(0.8);
-         box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1),
-            0 0 0 0 rgba(102, 102, 102, 0.1), 0 0 0 5px rgba(102, 102, 102, 0.1),
-            0 0 0 10px rgba(102, 102, 102, 0.1);
-         }
-
-         50% {
-         transform: scale(0.9);
-         box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1),
-            0 0 0 5px rgba(102, 102, 102, 0.1),
-            0 0 0 10px rgba(102, 102, 102, 0.1), 0 0 0 20px rgba(102, 102, 102, 0);
-         }
-         100% {
-         transform: scale(1.0);
-         }
-         }
+         box-shadow: 0 1px 1px rgba(19, 80, 91, 1),
+            0 0 0 0 rgba(19, 80, 91, 1), 0 0 0 1px rgba(19, 80, 91, 1),
+            0 0 0 2px rgba(19, 80, 91, 1);
          }
       }
    }
