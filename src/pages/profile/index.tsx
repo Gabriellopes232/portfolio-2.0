@@ -1,4 +1,4 @@
-import Curriculum from "../../components/pages/curriculum"
+import Curriculum from "../../components/mini-components/curriculum"
 import { Container } from "./styles"
 
 const Profile = () => {

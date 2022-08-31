@@ -40,8 +40,8 @@ export const LinkProject = styled.a`
   &:hover {
     background: #88888808;
     border-radius: 0.5em;
-    transition: 0.5s;
-    opacity: 0.5;
+    transition: 0.7s;
+    opacity: 0.9;
     animation-name: pulse;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -58,9 +58,9 @@ export const LinkProject = styled.a`
 
       50% {
         transform: scale(1.1);
-        box-shadow: 0 4px 10px rgba(102, 102, 102, 0.1),
-          0 0 0 5px rgba(102, 102, 102, 0.1),
-          0 0 0 10px rgba(102, 102, 102, 0.1), 0 0 0 20px rgba(102, 102, 102, 0);
+        box-shadow: 0 4px 6px rgba(102, 102, 102, 0.1),
+          0 0 0 4px rgba(102, 102, 102, 0.1),
+          0 0 0 6px rgba(102, 102, 102, 0.1), 0 0 0 10px rgba(102, 102, 102, 0);
       }
       100% {
         transform: scale(1.2);

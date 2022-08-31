@@ -9,6 +9,7 @@ declare module 'styled-components' {
       text: string;
       footer: string;
       links: string;
+      boxshadow: string;
     };
     fontSizes: {
       small: string;
@@ -25,6 +26,7 @@ declare module 'styled-components' {
       text: string;
       footer: string;
       links: string;
+      boxshadow: string;
     };
   }
 }
