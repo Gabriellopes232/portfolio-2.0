@@ -1,17 +1,13 @@
 import Link from 'next/link';
 import { useTheme } from '../../styles/themes/ThemeContext';
 import { TablerBrandTwitter, FeInstagram, MdiGithub, DarkModeOutlineRounded, LightModeOutline } from '../../styles/icons';
+import { Container } from './styles';
 
 const Header: React.FC = () => {
     const themeToggle = useTheme();
 
     return (
-        <div style={{
-            padding: '1em',
-            display: 'flex',
-            justifyContent: 'flex-end',
-            gap: '2%'
-        }}>
+        <Container>
             <Link href='/'>Profile</Link>
             <Link href='/blog/blog'>Blog</Link>
             <Link href='/projects/projects'>Projects</Link>
@@ -23,7 +19,7 @@ const Header: React.FC = () => {
             >
                 {themeToggle?.currentTheme === 'light' ? <DarkModeOutlineRounded /> : <LightModeOutline />}
             </a>
-        </div>
+        </Container>
     );
 };
 export default Header
