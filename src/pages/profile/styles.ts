@@ -6,8 +6,8 @@ export const Container = styled.div`
   margin-left: 3em;
   gap: 10%;
   background: ${(props) => props.theme.colors.background};
-  @media (max-width: 250px) {
+  @media (max-width: 450px) {
       justify-content: center;
-      --card-width: 100%;
+      margin-left: 5em;
    }
 `;
