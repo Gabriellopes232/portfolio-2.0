@@ -4,9 +4,6 @@ export const RootSkillCard = styled.div`
    --card-width: 340px;
    --card-height: 170px;
    display: grid;
-   height: 35vh;
-   max-height: 1000px;
-
    grid-template-columns: repeat(auto-fill, var(--card-width));
    align-items: stretch;
    grid-template-rows: auto;
