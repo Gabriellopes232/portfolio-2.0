@@ -3,9 +3,13 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: grid;
   padding: 2em;
-  margin-left: 5em;
+  margin-left: 3em;
   gap: 15%;
   background: ${(props) => props.theme.colors.background};
+  @media (max-width: 450px) {
+      gap:10%;
+      justify-content: center;
+   }
 `;
 
 export const UpcomingProject = styled.section`
