@@ -29,6 +29,13 @@ const Curriculum: React.FC = () => {
                 <h3>Competencies</h3>
                 <SkillsContainer />
             </Competencies>
+
+            <CurriculumText>
+                <h3>Experience</h3>
+                <p>
+                    Estagiário - Lw Tecnologia - Desenvolvimento Fullstack - abr de 2022 - present
+                </p>
+            </CurriculumText>
         </div>
     );
 };
