@@ -38,6 +38,19 @@ const Curriculum: React.FC = () => {
                     </p>
                 </section>
             </CurriculumText>
+            <CurriculumText>
+                <h3>Education</h3>
+                <section>
+                    <p>
+                        Escola Técnica Estadual de Santa Cruz - ETESC/FAETEC - Computer Technician  Mar 2019 - Dez 2021
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        Centro de Ensino Superior - UNICESUMAR - Technologist Systems analysis and development - Mar 2022 - Present
+                    </p>
+                </section>
+            </CurriculumText>
         </div>
     );
 };
