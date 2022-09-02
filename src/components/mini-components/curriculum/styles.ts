@@ -8,8 +8,8 @@ export const CurriculumText = styled.section`
       display: grid;
       align-content:center;
       text-align: center;
-      width: 45%;
-      height: 3em;
+      width: 70%;
+      height: 3.5em;
       max-height: 4em;
       margin: 0;
       border-radius: 1em;
@@ -25,6 +25,11 @@ export const CurriculumText = styled.section`
             font-weight: 600;
          }
       }
+      @media (max-width: 450px) {
+      width: 100%;
+      height: 5em;
+      max-height: 100%;
+   }
     }
     h3::after{
         display: block;
