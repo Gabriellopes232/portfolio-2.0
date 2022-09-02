@@ -7,8 +7,8 @@ export const RootSkillCard = styled.div`
    grid-template-columns: repeat(auto-fill, var(--card-width));
    align-items: stretch;
    grid-template-rows: auto;
-   grid-row-gap: 1rem;
-   grid-column-gap: 4rem;
+   grid-row-gap: 1em;
+   grid-column-gap: 4em;
 
    @media (max-width: 837px) {
       justify-content: center;
@@ -23,11 +23,11 @@ export const SkillCard = styled.section`
 
     display: -webkit-inline-box;
 
-    padding: 0.9rem 1rem;
+    padding: 0.9em 1em;
 
     background-color:#88888808;
    
-    border-radius: 0.8rem;
+    border-radius: 0.8em;
 
     section {
       display: grid;
@@ -40,7 +40,7 @@ export const SkillCard = styled.section`
 
       p {
          display: inline-block;
-         font-size: 0.8rem;
+         font-size: 0.8em;
          font-weight: 400;
          line-height: 150%;
          
@@ -50,7 +50,7 @@ export const SkillCard = styled.section`
       }
 
       h5 {
-         font-size: 1rem;
+         font-size: 1em;
          font-weight: 600;
       }
 
@@ -61,7 +61,7 @@ export const SkillCard = styled.section`
 
          align-items: center;
          justify-content: center;
-         border-radius: 0.9rem;
+         border-radius: 0.9em;
          opacity: 0.5;
          transition-duration: 0.6s;
          transition-property: opacity, color;
@@ -69,7 +69,7 @@ export const SkillCard = styled.section`
          cursor: pointer;
          border: none;
 
-         font-size: 0.9rem;
+         font-size: 0.9em;
          font-weight: 500;
          :hover {
          color: ${(props) => props.theme.colors.links};
