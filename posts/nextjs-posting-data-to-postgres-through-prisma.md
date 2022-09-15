@@ -145,7 +145,7 @@ Inside the map function add a button with a click action like so:
   list.map((item) => (
     <div key={item.id}>
       <h1>{item.name}</h1>
-      <img src={item.images[0]?.url} width='100' />
+      <img src={item.images[0]?.url} width="100" />
       <br />
       <button onClick={() => saveToDatabase(item)}>Save in database</button>
     </div>
