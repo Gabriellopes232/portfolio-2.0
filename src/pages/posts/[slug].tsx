@@ -1,15 +1,14 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import md from 'markdown-it';
-import path from 'path';
 
-type Props = {
+interface Props {
   params: {
     slug: any
   }
 }
 
-type Teste = {
+interface Teste {
   frontmatter: any
   content: any
 }

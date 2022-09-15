@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const RootSkillCard = styled.div`
-   --card-width: 340px;
+   --card-width: 370px;
    --card-height: 170px;
    display: grid;
    grid-template-columns: repeat(auto-fill, var(--card-width));

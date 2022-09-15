@@ -1,4 +1,4 @@
-import SkillsContainer from "../resume/skill";
+import { SkillsContainer } from "../resume";
 import { Competencies, CurriculumText } from "./styles";
 
 const Curriculum: React.FC = () => {

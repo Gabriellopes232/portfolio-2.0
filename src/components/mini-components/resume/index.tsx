@@ -1,8 +1,8 @@
 import { ReactNode } from "react"
-import { BxBxlTailwindCss, FileIconsStyledcomponents, IonLogoReact, MdiTailwind, TeenyiconsNextjsOutline } from "../../../styles/icons"
+import { BxBxlTailwindCss, FileIconsStyledcomponents, IonLogoReact, TeenyiconsNextjsOutline } from "../../../styles/icons"
 import { RootSkillCard, SkillCard } from "./styles"
 
-const SkillsContainer: React.FC = () => {
+export const SkillsContainer: React.FC = () => {
     interface SkillsProps {
         id: number
         skill: string
@@ -69,5 +69,3 @@ const SkillsContainer: React.FC = () => {
         </>
     )
 }
-
-export default SkillsContainer

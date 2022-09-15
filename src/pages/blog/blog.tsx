@@ -2,12 +2,13 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Container } from './styles';
 
-type Props = {
+interface Props {
     posts: any
 }
 
-type Teste = {
+interface Teste {
     slug: any
     frontmatter: any
 }
@@ -33,13 +34,14 @@ export async function getStaticProps() {
 
 const Blog = ({posts}:Props) => {
         return (
-          <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
+          <article>
+          <Container>
             {posts.map(({ slug, frontmatter }: Teste) => (
               <div
                 key={slug}
                 className='border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col'
               >
-                <Link href={`/post/${slug}`}>
+                <Link href={`/posts/${slug}`}>
                   <a>
                     <Image
                       width={650}
@@ -52,7 +54,8 @@ const Blog = ({posts}:Props) => {
                 </Link>
               </div>
             ))}
-          </div>
+          </Container>
+          </article>
         );
       }
 
