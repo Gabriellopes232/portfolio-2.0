@@ -8,7 +8,7 @@ export const CurriculumText = styled.section`
       display: grid;
       align-content:center;
       text-align: center;
-      width: 70%;
+      width: 100%;
       height: 3.5em;
       max-height: 4em;
       margin: 0;
