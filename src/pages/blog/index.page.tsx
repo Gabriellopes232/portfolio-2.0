@@ -4,13 +4,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Container } from './styles';
 
-interface Props {
-    posts: any
-}
 
-interface Teste {
-    slug: any
-    frontmatter: any
+interface PostsProps {
+  slug: string
+  frontmatter: any
+}
+interface Props {
+    posts: PostsProps[]
 }
 
 export async function getStaticProps() {
@@ -33,10 +33,11 @@ export async function getStaticProps() {
   }  
 
 const Blog = ({posts}:Props) => {
+        console.log(posts)
         return (
           <article>
           <Container>
-            {posts.map(({ slug, frontmatter }: Teste) => (
+            {posts.map(({ slug, frontmatter }: PostsProps) => (
               <div
                 key={slug}
                 className='border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col'

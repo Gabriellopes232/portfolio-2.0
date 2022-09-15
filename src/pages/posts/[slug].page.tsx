@@ -4,13 +4,13 @@ import md from 'markdown-it';
 
 interface Props {
   params: {
-    slug: any
+    slug: string
   }
 }
 
-interface Teste {
+interface ContentPosts {
   frontmatter: any
-  content: any
+  content: string
 }
 
 export async function getStaticPaths() {
@@ -35,7 +35,7 @@ export async function getStaticProps({ params: { slug } }: Props) {
       },
     };
 }
-export default function PostPage({ frontmatter, content }: Teste) {
+export default function PostPage({ frontmatter, content }: ContentPosts) {
     return (
       <div className='prose mx-auto'>
         <p>{frontmatter.title}</p>
