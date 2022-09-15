@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: grid;
-  padding: 2em;
-  margin-left: 3em;
-  gap: 8%;
-  background: ${(props) => props.theme.colors.background};
-  @media (max-width: 450px) {
-      justify-content: center;
-      margin-left: 5em;
-   }
+   padding: 2em;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 5em;
+   background: ${(props) => props.theme.colors.background};
+   @media (max-width: 450px) {
+         justify-content: center;
+      }
 `;

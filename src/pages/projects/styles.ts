@@ -1,29 +1,41 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: grid;
   padding: 2em;
-  margin-left: 3em;
-  gap: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5em;
   background: ${(props) => props.theme.colors.background};
+  h4::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: ${(props) => props.theme.colors.boxshadow};
+    opacity: 0.5;
+    font-style: normal;
+    margin-top: 0.8em;
   @media (max-width: 450px) {
-      gap:10%;
       justify-content: center;
    }
 `;
 
 export const UpcomingProject = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  gap: 5em;
+}
 `;
 export const LinksTips = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  gap: 5em;
+}
 `;
 
 export const Lastest = styled.section`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  gap: 5em;
+}
 `;
 export const ContentCard = styled.section`
   display: flex;
