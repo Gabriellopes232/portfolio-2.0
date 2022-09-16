@@ -114,3 +114,10 @@ export function MaterialSymbolsWidgetsOutline(props: SVGProps<SVGSVGElement>) {
         <svg width="30px" height="30px" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M16.65 13L11 7.35l5.65-5.65l5.65 5.65ZM3 11V3h8v8Zm10 10v-8h8v8ZM3 21v-8h8v8ZM5 9h4V5H5Zm11.675 1.2L19.5 7.375L16.675 4.55L13.85 7.375ZM15 19h4v-4h-4ZM5 19h4v-4H5ZM9 9Zm4.85-1.625ZM9 15Zm6 0Z"></path></svg>
     )
 }
+
+
+export function GridiconsAlignImageRight(props: SVGProps<SVGSVGElement>) {
+    return (
+      <svg width="20px" height="20px" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M21 7H3V5h18v2zm0 10H3v2h18v-2zm0-8h-8v6h8V9zm-10 4H3v2h8v-2zm0-4H3v2h8V9z"></path></svg>
+    )
+  }
