@@ -17,7 +17,7 @@ export const RootSkillCard = styled.div`
 `
 
 export const SkillCard = styled.section`
-    width: 370px;
+    width: 100%;
 
     max-width: 500px;
 
