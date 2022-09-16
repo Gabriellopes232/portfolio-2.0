@@ -118,6 +118,21 @@ export function MaterialSymbolsWidgetsOutline(props: SVGProps<SVGSVGElement>) {
 
 export function GridiconsAlignImageRight(props: SVGProps<SVGSVGElement>) {
     return (
-      <svg width="20px" height="20px" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M21 7H3V5h18v2zm0 10H3v2h18v-2zm0-8h-8v6h8V9zm-10 4H3v2h8v-2zm0-4H3v2h8V9z"></path></svg>
+      <svg width="25px" height="25px" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M21 7H3V5h18v2zm0 10H3v2h18v-2zm0-8h-8v6h8V9zm-10 4H3v2h8v-2zm0-4H3v2h8V9z"></path></svg>
     )
   }
+
+
+export function FluentThumbLike16Filled(props: SVGProps<SVGSVGElement>) {
+    return (
+      <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" {...props}><path fill="currentColor" d="M9.58 1.052c-.75-.209-1.336.35-1.545.871c-.24.6-.453 1.021-.706 1.524a44.75 44.75 0 0 0-.533 1.09c-.475 1.01-.948 1.656-1.293 2.045a4.063 4.063 0 0 1-.405.402a1.92 1.92 0 0 1-.101.081l-.016.012L3.109 8.18a2 2 0 0 0-.856 2.426l.52 1.384a2 2 0 0 0 1.273 1.205l5.356 1.682a2.5 2.5 0 0 0 3.148-1.68l1.364-4.647a2 2 0 0 0-1.92-2.563H10.61c.066-.227.133-.479.195-.74c.131-.562.243-1.203.232-1.738c-.009-.497-.06-1.019-.264-1.462c-.219-.475-.602-.832-1.192-.996ZM4.978 7.08l-.002.001Z"></path></svg>
+    )
+  }
+
+
+export function FluentThumbDislike24Filled(props: SVGProps<SVGSVGElement>) {
+    return (
+      <svg width="1.5em" height="1.5em" viewBox="0 0 24 24" {...props}><path fill="currentColor" d="M15.056 14.183c.46 1.427.693 2.676.693 3.753c0 2.398-.939 4.247-2.5 4.247c-.8 0-1.078-.45-1.383-1.546l-.27-1.022c-.1-.358-.276-.97-.526-1.83a.247.247 0 0 0-.03-.066l-2.866-4.485a5.885 5.885 0 0 0-2.855-2.327l-1.257-.481A1.75 1.75 0 0 1 2.97 8.458l.686-3.538a2.25 2.25 0 0 1 1.673-1.758l8.25-2.021a4.75 4.75 0 0 1 5.733 3.44l1.574 6.172a2.75 2.75 0 0 1-2.665 3.43h-3.165Z"></path></svg>
+    )
+  }
+
