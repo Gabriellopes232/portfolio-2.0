@@ -1,7 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import { GridiconsAlignImageRight } from '../../styles/icons';
+import { FluentThumbDislike24Filled, FluentThumbLike16Filled, GridiconsAlignImageRight } from '../../styles/icons';
 import { Container, Date } from './styles';
 
 
@@ -42,17 +42,23 @@ const Blog = ({posts}:Props) => {
                 <h1>Blog</h1>
                     {posts.map(({ slug, frontmatter }: PostsProps) => (
                       <div
-                        key={slug}
-                        style={{borderRight:'1px solid #a0a4b863', paddingRight:'2em', borderRightStyle:'groove'}}
+                      key={slug}
+                      style={{borderRight:'1px solid #a0a4b863', paddingRight:'2em', borderRightStyle:'groove'}}
                       >
                         <ul>  
                           <Link href={`/posts/${slug}`}>
                                 <a>
                                   <div style={{display:'flex', alignItems:'center', justifyContent:'center', gap:'0.5em'}}>
                                       <GridiconsAlignImageRight />
-                                      <span className='p-4'>{frontmatter.title}</span>
+                                      <span style={{fontSize:'1.5em', lineHeight:'1.75em'}}>{frontmatter.title}</span>
                                   </div>
-                                  <Date>Set 16 - 9min</Date>
+                                  <div style={{display: 'flex', alignItems: 'center'}}>
+                                      <Date>Set 16 - 9min</Date>
+                                      <div style={{display:'flex', gap:'4em', marginLeft:'6em'}}>
+                                        <span><FluentThumbLike16Filled/></span>
+                                        <span><FluentThumbDislike24Filled/></span>
+                                      </div>
+                                  </div>
                                 </a>
                           </Link>
                         </ul>
