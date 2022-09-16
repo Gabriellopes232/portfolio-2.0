@@ -1,5 +1,5 @@
 const seoConfig = {
-    title: 'Portfolio site',
+    title: 'Portfolio - Gabriel Lopes',
     description: 'Website with some information about me and my work',
     openGraph: {
         type: 'website',
