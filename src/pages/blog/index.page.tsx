@@ -1,8 +1,8 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import Image from 'next/image';
 import Link from 'next/link';
-import { Container } from './styles';
+import { GridiconsAlignImageRight } from '../../styles/icons';
+import { Container, Date } from './styles';
 
 
 interface PostsProps {
@@ -12,6 +12,8 @@ interface PostsProps {
 interface Props {
     posts: PostsProps[]
 }
+
+
 
 export async function getStaticProps() {
     const files = fs.readdirSync('posts');
@@ -33,30 +35,35 @@ export async function getStaticProps() {
   }  
 
 const Blog = ({posts}:Props) => {
-        console.log(posts)
         return (
+          <>
           <article>
-          <Container>
-            {posts.map(({ slug, frontmatter }: PostsProps) => (
-              <div
-                key={slug}
-                className='border border-gray-200 m-2 rounded-xl shadow-lg overflow-hidden flex flex-col'
-              >
-                <Link href={`/posts/${slug}`}>
-                  <a>
-                    <Image
-                      width={650}
-                      height={340}
-                      alt={frontmatter.title}
-                      src={`/${frontmatter.socialImage}`}
-                    />
-                    <h1 className='p-4'>{frontmatter.title}</h1>
-                  </a>
-                </Link>
-              </div>
-            ))}
-          </Container>
-          </article>
+              <Container>
+                <h1>Blog</h1>
+                    {posts.map(({ slug, frontmatter }: PostsProps) => (
+                      <div
+                        key={slug}
+                        style={{borderRight:'1px solid #a0a4b863', paddingRight:'2em', borderRightStyle:'groove'}}
+                      >
+                        <ul>  
+                          <Link href={`/posts/${slug}`}>
+                                <a>
+                                  <div style={{display:'flex', alignItems:'center', justifyContent:'center', gap:'0.5em'}}>
+                                      <GridiconsAlignImageRight />
+                                      <span className='p-4'>{frontmatter.title}</span>
+                                  </div>
+                                  <Date>Set 16 - 9min</Date>
+                                </a>
+                          </Link>
+                        </ul>
+                      </div>
+                    ))}
+                  <footer>
+                      © 2022 - present www.gabriellopes.dev.com - All Rights Reserved.
+                  </footer>
+              </Container>
+            </article>
+            </>
         );
       }
 
