@@ -13,7 +13,7 @@ export default createGlobalStyle`
     body {
         background: ${(props) => props.theme.colors.background};
         color: ${(props) => props.theme.colors.text};
-        font-family: Ubuntu, 'Open Sans', sans-serif
+        font-family: 'Ubuntu', sans-serif;
     }
     h1 {
         color: ${(props) => props.theme.colors.titles};
