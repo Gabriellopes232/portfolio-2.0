@@ -23,7 +23,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/pages/api/comments.js"
+    "src/pages/api/comments.js",
+    "src/components/mini-components/post/PostDetail.jsx"
   ],
   "exclude": [
     "node_modules"
