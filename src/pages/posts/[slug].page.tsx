@@ -1,45 +1,51 @@
-import fs from 'fs';
-import matter from 'gray-matter';
-import md from 'markdown-it';
+import React from 'react';
+
+import { getPosts } from '../../services';
+import PostDetail from '../../components/mini-components/post/PostDetail';
+
 
 interface Props {
-  params: {
-    slug: string
+  params: any
+  post: any
+}
+
+interface PropsParams {
+  params: any
+  node: {
+    slug: any
   }
 }
 
-interface ContentPosts {
-  frontmatter: any
-  content: string
+const PostDetails = ({ post }: Props) => {
+  return (
+    <>
+      <div className="container mx-auto px-10 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div className="col-span-1 lg:col-span-8">
+            <PostDetail post={post} />
+            {/* <CommentsForm slug={post.slug} />
+            <Comments slug={post.slug} /> */}
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+export default PostDetails;
+
+export async function getStaticProps({ params }: Props) {
+  const data = await PostDetails(params.slug);
+  return {
+    props: {
+      post: data,
+    },
+  };
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync('posts');
-    const paths = files.map((fileName) => ({
-        params: {
-          slug: fileName.replace('.md', ''),
-        },
-    }));
-    return {
-        paths,
-        fallback: false,
-    };
+  const posts = await getPosts();
+  return {
+    paths: posts.map(({ node: { slug } }: PropsParams) => ({ params: { slug } })),
+    fallback: true,
+  };
 }
-export async function getStaticProps({ params: { slug } }: Props) {
-    const fileName = fs.readFileSync(`posts/${slug}.md`, 'utf-8');
-    const { data: frontmatter, content } = matter(fileName);
-    return {
-      props: {
-        frontmatter,
-        content,
-      },
-    };
-}
-export default function PostPage({ frontmatter, content }: ContentPosts) {
-    return (
-      <div className='prose mx-auto'>
-        <p>{frontmatter.title}</p>
-        <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
-      </div>
-    );
-  }
