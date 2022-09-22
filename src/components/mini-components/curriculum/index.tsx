@@ -18,7 +18,7 @@ const Curriculum: React.FC = () => {
         <div>
             {curr.map(arr => (
                 <CurriculumText key={arr.id}>
-                    <h3>{arr.title}</h3>
+                    <h2>{arr.title}</h2>
                     <p>
                         {arr.text}
                     </p>
