@@ -6,40 +6,33 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 5em;
-  background: ${(props) => props.theme.colors.background};
   h4::after{
     display: block;
     content: "";
     width: 100%;
     height: 2px;
-    background-color: ${(props) => props.theme.colors.boxshadow};
+    background-color: ${(props) => props.theme.colors.links};
     opacity: 0.5;
     font-style: normal;
     margin-top: 0.8em;
-  @media (max-width: 450px) {
-      justify-content: center;
-   }
+  }
 `;
 
 export const UpcomingProject = styled.section`
   display: flex;
-  gap: 5em;
-}
-`;
-export const LinksTips = styled.section`
-  display: flex;
-  gap: 5em;
-}
+  justify-content: space-evenly;
+  width: 100%;
+  gap:2em;
+  @media (max-width: 450px) {
+         justify-content: center;
+         flex-direction:column ;
+      }
 `;
 
-export const Lastest = styled.section`
-  display: flex;
-  gap: 5em;
-}
-`;
 export const ContentCard = styled.section`
   display: flex;
   gap: 5%;
+  width: 100%;
   align-items: center;
 `;
 
@@ -51,7 +44,6 @@ export const TextCard = styled.section`
 
 export const LinkProject = styled.a`
   color: ${(props) => props.theme.colors.links};
-  width: 20em;
   padding: 0.8em 1em;
   &:hover {
     background: #88888808;
@@ -82,5 +74,8 @@ export const LinkProject = styled.a`
         transform: scale(1.2);
       }
     }
+    @media (max-width: 450px) {
+      justify-content: center;
+   }
   }
 `;
