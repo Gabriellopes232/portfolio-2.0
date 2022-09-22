@@ -5,8 +5,8 @@ export default {
     background: '#fafafa',
     titles: '#040404',
     text: '#0D1321',
-    footer: '#A0A4B8',
-    links: '#7293A0',
+    footer: '#616266',
+    links: '#3c6778',
     boxshadow: 'rgba(114, 147, 160, 1)'
   },
 };

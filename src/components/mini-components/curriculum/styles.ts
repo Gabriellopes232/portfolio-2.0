@@ -54,7 +54,7 @@ export const Competencies = styled.section`
         content: "";
         width: 25%;
         height: 1px;
-        background-color: ${(props) => props.theme.colors.boxshadow};
+        background-color: ${(props) => props.theme.colors.links};
         opacity: 0.5;
         font-style: normal;
         margin-top: 0.8em;

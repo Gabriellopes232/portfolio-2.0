@@ -6,7 +6,6 @@ export const Container = styled.div`
    align-items: center;
    flex-direction: column;
    gap: 5em;
-   background: ${(props) => props.theme.colors.background};
    @media (max-width: 450px) {
          justify-content: center;
       }
