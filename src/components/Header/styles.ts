@@ -11,3 +11,9 @@ export const Container = styled.div`
       justify-content: center;
    }
 `
+export const IconButton = styled.button`
+   border:none;
+   background:none;
+   color: ${(props) => props.theme.colors.links};
+   cursor:pointer;
+`
