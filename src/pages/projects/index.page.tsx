@@ -1,5 +1,5 @@
 import { GgWebsite, UilForecastcloudMoonTear, MaterialSymbolsAirplaneTicketOutline, MaterialSymbolsAttachMoney, MaterialSymbolsMovieFilterOutline, MaterialSymbolsWidgetsOutline, TablerIcons, MdiTailwind, ShieldIcon } from "../../styles/icons"
-import { Container, UpcomingProject, LinkProject, ContentCard, TextCard, LinksTips } from "./styles"
+import { Container, UpcomingProject, LinkProject, ContentCard, TextCard } from "./styles"
 
 const Projects = () => {
     return (
@@ -71,7 +71,7 @@ const Projects = () => {
                 </LinkProject>
             </UpcomingProject>
             <h4>Websites / Online Tools</h4>
-            <LinksTips>
+            <UpcomingProject>
                 <LinkProject href="https://icones.netlify.app/" target='_blank'>
                     <ContentCard>
                         <TablerIcons />
@@ -99,7 +99,7 @@ const Projects = () => {
                         </TextCard>
                     </ContentCard>
                 </LinkProject>
-            </LinksTips>
+            </UpcomingProject>
             <footer>
                 © 2022 - present www.gabriellopes.dev.com - All Rights Reserved.
             </footer>
