@@ -51,7 +51,7 @@ export const SkillsContainer: React.FC = () => {
                 {skills.map(skill => (
                     <SkillCard key={skill.reference}>
                         <section>
-                            <h5>{skill.skill}</h5>
+                            <h4>{skill.skill}</h4>
                             <p>Exp.years: {skill.experience}</p>
                             <p>Projects count: {skill.projectsCount}</p>
                         </section>
@@ -59,7 +59,9 @@ export const SkillsContainer: React.FC = () => {
                             <a href={skill.reference}
                                 target='_blank'
                                 rel='noopener noreferrer'
-                                className='skill-source'>
+                                className='skill-source'
+                                aria-label='links stacks tecnology'
+                            >
                                 {skill.icon}
                             </a>
                         </section>
