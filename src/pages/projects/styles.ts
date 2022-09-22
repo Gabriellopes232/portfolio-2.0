@@ -22,12 +22,19 @@ export const UpcomingProject = styled.section`
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  gap:2em;
-  @media (max-width: 450px) {
-         justify-content: center;
-         flex-direction:column ;
-      }
+  gap:5em;
+  flex-direction:column ;
+  align-items: center;
 `;
+
+export const ContainerLinksProjects = styled.div`
+  display: flex;
+  gap: 10em;
+  @media (max-width: 450px) {
+      flex-direction: column;
+      gap: 5em;
+  }
+`
 
 export const ContentCard = styled.section`
   display: flex;
@@ -45,6 +52,7 @@ export const TextCard = styled.section`
 export const LinkProject = styled.a`
   color: ${(props) => props.theme.colors.links};
   padding: 0.8em 1em;
+  width: 100%;
   &:hover {
     background: #88888808;
     border-radius: 0.5em;
