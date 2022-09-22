@@ -4,7 +4,7 @@ const seoConfig = {
     openGraph: {
         type: 'website',
         locale: 'pt_BR',
-        url: 'https://portfolio-2-0-gamma.vercel.app/',
+        url: 'https://www.gablopes.me/',
         site_name: 'SiteName',
     },
     twitter: {
