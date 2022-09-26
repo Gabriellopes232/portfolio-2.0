@@ -54,10 +54,6 @@ const Blog = ({ posts }: Props) => {
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                       <Date>Set 16 - 9min</Date>
-                      <div style={{ display: 'flex', gap: '4em', marginLeft: '6em' }}>
-                        <span><FluentThumbLike16Filled /></span>
-                        <span><FluentThumbDislike24Filled /></span>
-                      </div>
                     </div>
                   </a>
                 </Link>
