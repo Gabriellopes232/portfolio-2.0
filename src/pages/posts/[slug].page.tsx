@@ -37,9 +37,9 @@ export async function getStaticProps({ params: { slug } }: Props) {
 }
 export default function PostPage({ frontmatter, content }: ContentPosts) {
   return (
-    <div className='prose mx-auto'>
-      <p>{frontmatter.title}</p>
-      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+    <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '5em' }}>
+      <h1>{frontmatter.title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '5em', width: '50em' }} />
     </div>
   );
 }
