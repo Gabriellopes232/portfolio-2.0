@@ -30,7 +30,7 @@ export const UpcomingProject = styled.section`
 export const ContainerLinksProjects = styled.div`
   display: flex;
   gap: 10em;
-  width:100%;
+  width:80vw;
   @media (max-width: 450px) {
       flex-direction: column;
       gap: 5em;
