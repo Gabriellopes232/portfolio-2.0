@@ -31,6 +31,7 @@ export const ContainerLinksProjects = styled.div`
   display: flex;
   gap: 10em;
   width:80vw;
+  max-width:80em;
   @media (max-width: 450px) {
       flex-direction: column;
       gap: 5em;
