@@ -15,15 +15,15 @@ export const SkillsContainer: React.FC = () => {
         {
             id: 1,
             skill: 'NextJs',
-            experience: 0.6,
-            projectsCount: 2,
+            experience: 1.5,
+            projectsCount: 4,
             reference: 'https://nextjs.org/',
             icon: <TeenyiconsNextjsOutline />
         },
         {
             id: 2,
             skill: 'ReactJs',
-            experience: 1.5,
+            experience: 3,
             projectsCount: 5,
             reference: 'https://reactjs.org//',
             icon: <IonLogoReact />
@@ -31,7 +31,7 @@ export const SkillsContainer: React.FC = () => {
         {
             id: 3,
             skill: 'StyledComponents',
-            experience: 1.0,
+            experience: 2.0,
             projectsCount: 5,
             reference: 'https://styled-components.com/',
             icon: <FileIconsStyledcomponents />
@@ -39,7 +39,7 @@ export const SkillsContainer: React.FC = () => {
         {
             id: 4,
             skill: 'TailwindCss',
-            experience: 0.6,
+            experience: 1.5,
             projectsCount: 1,
             reference: 'https://tailwindcss.com/',
             icon: <BxBxlTailwindCss />
