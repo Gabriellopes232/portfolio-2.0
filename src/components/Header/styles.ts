@@ -4,9 +4,9 @@ export const Container = styled.div`
     padding: 1em;
     display: flex;
     justify-content: flex-end;
-    gap: 2%;
+    gap: 1.5em;
     @media (max-width: 450px) {
-      gap:5%;
+      gap: 1em;
       margin-left: 5em;
       justify-content: center;
    }
