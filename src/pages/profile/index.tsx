@@ -6,7 +6,7 @@ const Profile = () => {
         <Container>
             <h1>Gabriel Lopes</h1>
             <p>
-                Hello my name is Gabriel and Im 19 years old Im a front-end developer passionate about technology.
+                Hello my name is Gabriel and Im 19 years old Im a Software Engineer Jr. passionate about technology.
             </p>
             <p>
                 Today I work for a year in the area of web development, passionate about react and its features, I seek more and more to evolve and seek more and more perfection.
