@@ -34,7 +34,12 @@ const Curriculum: React.FC = () => {
                 <h3>Experience</h3>
                 <section>
                     <p>
-                        Intern - Lw Tecnologia - Fullstack Development - Apr 2022 - Present
+                        Intern - Lw Tecnologia - Fullstack Development - Apr 2022 - Nov 2022
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        Developer Jr - Reserve Systems - Fullstack Development - Nov 2022 - Jan 2023
                     </p>
                 </section>
             </CurriculumText>
