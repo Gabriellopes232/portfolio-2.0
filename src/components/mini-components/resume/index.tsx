@@ -15,7 +15,7 @@ export const SkillsContainer: React.FC = () => {
         {
             id: 1,
             skill: 'NextJs',
-            experience: 1.5,
+            experience: 2.0,
             projectsCount: 4,
             reference: 'https://nextjs.org/',
             icon: <TeenyiconsNextjsOutline />
@@ -39,7 +39,7 @@ export const SkillsContainer: React.FC = () => {
         {
             id: 4,
             skill: 'TailwindCss',
-            experience: 1.5,
+            experience: 2.0,
             projectsCount: 1,
             reference: 'https://tailwindcss.com/',
             icon: <BxBxlTailwindCss />
