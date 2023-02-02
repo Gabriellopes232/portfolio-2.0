@@ -22,7 +22,7 @@ const Curriculum: React.FC = () => {
                     <p>
                         {arr.text}
                     </p>
-                    <a href="curriculo.pdf" download='curriculo.pdf'> - Download/See my resume as a PDF</a>
+                    <a href='curriculo.pdf' download='curriculo.pdf'> - Download/See my resume as a PDF</a>
                 </CurriculumText>
             ))}
             <Competencies>
