@@ -12,5 +12,5 @@ export const Container = styled.div`
 
 export const Date = styled.p`
   opacity: 0.5;
-  font-size: 14px
-`
+  font-size: 14px;
+`;

@@ -1,19 +1,20 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import { FluentThumbDislike24Filled, FluentThumbLike16Filled, GridiconsAlignImageRight } from '../../styles/icons';
+import {
+  FluentThumbDislike24Filled,
+  FluentThumbLike16Filled,
+  GridiconsAlignImageRight,
+} from '../../styles/icons';
 import { Container, Date } from './styles';
 
-
 interface PostsProps {
-  slug: string
-  frontmatter: any
+  slug: string;
+  frontmatter: any;
 }
 interface Props {
-  posts: PostsProps[]
+  posts: PostsProps[];
 }
-
-
 
 export async function getStaticProps() {
   const files = fs.readdirSync('posts');
@@ -43,14 +44,27 @@ const Blog = ({ posts }: Props) => {
           {posts.map(({ slug, frontmatter }: PostsProps) => (
             <div
               key={slug}
-              style={{ borderRight: '1px solid #a0a4b863', paddingRight: '2em', borderRightStyle: 'groove' }}
+              style={{
+                borderRight: '1px solid #a0a4b863',
+                paddingRight: '2em',
+                borderRightStyle: 'groove',
+              }}
             >
               <ul>
                 <Link href={`/posts/${slug}`}>
                   <a>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5em' }}>
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.5em',
+                      }}
+                    >
                       <GridiconsAlignImageRight />
-                      <span style={{ fontSize: '1.5em', lineHeight: '1.75em' }}>{frontmatter.title}</span>
+                      <span style={{ fontSize: '1.5em', lineHeight: '1.75em' }}>
+                        {frontmatter.title}
+                      </span>
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                       <Date>Set 16 - 9min</Date>
@@ -67,6 +81,6 @@ const Blog = ({ posts }: Props) => {
       </article>
     </>
   );
-}
+};
 
-export default Blog
+export default Blog;

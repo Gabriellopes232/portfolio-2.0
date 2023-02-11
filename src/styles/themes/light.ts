@@ -7,6 +7,6 @@ export default {
     text: '#0D1321',
     footer: '#616266',
     links: '#3c6778',
-    boxshadow: 'rgba(114, 147, 160, 1)'
+    boxshadow: 'rgba(114, 147, 160, 1)',
   },
 };

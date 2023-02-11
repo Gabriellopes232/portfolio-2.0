@@ -4,13 +4,13 @@ import md from 'markdown-it';
 
 interface Props {
   params: {
-    slug: string
-  }
+    slug: string;
+  };
 }
 
 interface ContentPosts {
-  frontmatter: any
-  content: string
+  frontmatter: any;
+  content: string;
 }
 
 export async function getStaticPaths() {
@@ -37,9 +37,25 @@ export async function getStaticProps({ params: { slug } }: Props) {
 }
 export default function PostPage({ frontmatter, content }: ContentPosts) {
   return (
-    <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '5em' }}>
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column',
+        gap: '5em',
+      }}
+    >
       <h1>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', gap: '5em', width: '50em' }} />
+      <div
+        dangerouslySetInnerHTML={{ __html: md().render(content) }}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column',
+          gap: '5em',
+          width: '50em',
+        }}
+      />
     </div>
   );
 }

@@ -6,9 +6,9 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 5em;
-  h4::after{
+  h4::after {
     display: block;
-    content: "";
+    content: '';
     width: 100%;
     height: 2px;
     background-color: ${(props) => props.theme.colors.links};
@@ -22,21 +22,21 @@ export const UpcomingProject = styled.section`
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  gap:5em;
-  flex-direction:column ;
+  gap: 5em;
+  flex-direction: column;
   align-items: center;
 `;
 
 export const ContainerLinksProjects = styled.div`
   display: flex;
   gap: 10em;
-  width:80vw;
-  max-width:80em;
+  width: 80vw;
+  max-width: 80em;
   @media (max-width: 450px) {
-      flex-direction: column;
-      gap: 5em;
+    flex-direction: column;
+    gap: 5em;
   }
-`
+`;
 
 export const ContentCard = styled.section`
   display: flex;
@@ -77,8 +77,8 @@ export const LinkProject = styled.a`
       50% {
         transform: scale(1.1);
         box-shadow: 0 4px 6px rgba(102, 102, 102, 0.1),
-          0 0 0 4px rgba(102, 102, 102, 0.1),
-          0 0 0 6px rgba(102, 102, 102, 0.1), 0 0 0 10px rgba(102, 102, 102, 0);
+          0 0 0 4px rgba(102, 102, 102, 0.1), 0 0 0 6px rgba(102, 102, 102, 0.1),
+          0 0 0 10px rgba(102, 102, 102, 0);
       }
       100% {
         transform: scale(1.2);
@@ -86,6 +86,6 @@ export const LinkProject = styled.a`
     }
     @media (max-width: 450px) {
       justify-content: center;
-   }
+    }
   }
 `;
