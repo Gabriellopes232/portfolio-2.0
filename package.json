@@ -9,7 +9,7 @@
     "lint": "next lint ./src --ext .ts",
     "lint:fix": "eslint ./src --ext .ts --fix",
     "style:check": "prettier --check 'src/**/*.ts'",
-    "style:fix": "prettier --write 'src/**/*.ts'"
+    "style:fix": "prettier --write 'src/**/*.ts' 'src/**/*.tsx'"
   },
   "dependencies": {
     "graphql": "^16.6.0",
