@@ -137,7 +137,7 @@ const Projects = () => {
         </ContainerLinksProjects>
       </UpcomingProject>
       <footer>
-        © 2022 - present www.gabriellopes.dev.com - All Rights Reserved.
+        © 2022 - present www.gablopes.me - All Rights Reserved.
       </footer>
     </Container>
   );
