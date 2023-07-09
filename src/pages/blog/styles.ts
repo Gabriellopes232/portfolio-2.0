@@ -7,10 +7,5 @@ export const Container = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 5em;
-  padding: 1em 2em;
-`;
-
-export const Date = styled.p`
-  opacity: 0.5;
-  font-size: 14px;
+  padding: 2em;
 `;
