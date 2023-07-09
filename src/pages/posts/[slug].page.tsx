@@ -43,6 +43,7 @@ export default function PostPage({ frontmatter, content }: ContentPosts) {
         alignItems: 'center',
         flexDirection: 'column',
         gap: '5em',
+        padding: '2em',
       }}
     >
       <h1>{frontmatter.title}</h1>
@@ -53,7 +54,7 @@ export default function PostPage({ frontmatter, content }: ContentPosts) {
           alignItems: 'center',
           flexDirection: 'column',
           gap: '5em',
-          width: '50em',
+          width: '100%',
         }}
       />
     </div>

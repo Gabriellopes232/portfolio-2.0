@@ -44,6 +44,12 @@ const Curriculum: React.FC = () => {
             Jan 2023
           </p>
         </section>
+        <section>
+          <p>
+            Developer Jr - Neosyx - Front-end Development - Apr 2023 -
+            Present
+          </p>
+        </section>
       </CurriculumText>
       <CurriculumText>
         <h3>Education</h3>

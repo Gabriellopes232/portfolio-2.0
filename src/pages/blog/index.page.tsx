@@ -2,11 +2,9 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
 import {
-  FluentThumbDislike24Filled,
-  FluentThumbLike16Filled,
   GridiconsAlignImageRight,
 } from '../../styles/icons';
-import { Container, Date } from './styles';
+import { Container} from './styles';
 
 interface PostsProps {
   slug: string;
@@ -66,16 +64,13 @@ const Blog = ({ posts }: Props) => {
                         {frontmatter.title}
                       </span>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <Date>Set 16 - 9min</Date>
-                    </div>
                   </a>
                 </Link>
               </ul>
             </div>
           ))}
           <footer>
-            © 2022 - present - www.gabriellopes.dev.com - All Rights Reserved.
+            © 2022 - present - www.gablopes.me - All Rights Reserved.
           </footer>
         </Container>
       </article>
