@@ -1,6 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import md from 'markdown-it';
+import Head from 'next/head';
 
 interface Props {
   params: {
@@ -37,27 +38,32 @@ export async function getStaticProps({ params: { slug } }: Props) {
 }
 export default function PostPage({ frontmatter, content }: ContentPosts) {
   return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        flexDirection: 'column',
-        gap: '5em',
-        padding: '2em',
-      }}
-    >
-      <h1>{frontmatter.title}</h1>
+    <>
+      <Head>
+        <title>Posts - Gabriel Lopes</title>
+      </Head>
       <div
-        dangerouslySetInnerHTML={{ __html: md().render(content) }}
         style={{
           display: 'flex',
           alignItems: 'center',
           flexDirection: 'column',
           gap: '5em',
-          width: '100%',
-          maxWidth: '50em'
+          padding: '2em',
         }}
-      />
-    </div>
+      >
+        <h1>{frontmatter.title}</h1>
+        <div
+          dangerouslySetInnerHTML={{ __html: md().render(content) }}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            flexDirection: 'column',
+            gap: '5em',
+            width: '100%',
+            maxWidth: '50em'
+          }}
+        />
+      </div>
+    </>
   );
 }

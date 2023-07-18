@@ -1,6 +1,7 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
+import Head from 'next/head';
 import {
   GridiconsAlignImageRight,
 } from '../../styles/icons';

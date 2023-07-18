@@ -17,6 +17,7 @@ import {
   TextCard,
   ContainerLinksProjects,
 } from './styles';
+import Head from 'next/head';
 
 const Projects = () => {
   return (
@@ -141,7 +142,7 @@ const Projects = () => {
           </ContainerLinksProjects>
         </UpcomingProject>
         <footer>
-          © 2022 - present www.gablopes.me - All Rights Reserved.
+          © 2022 - present www.gabriellopes.dev.com - All Rights Reserved.
         </footer>
       </Container>
     </>

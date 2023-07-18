@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Curriculum from '../../components/mini-components/curriculum';
 import { Container } from './styles';
 
