@@ -4,7 +4,7 @@ import Link from 'next/link';
 import {
   GridiconsAlignImageRight,
 } from '../../styles/icons';
-import { Container} from './styles';
+import { Container } from './styles';
 
 interface PostsProps {
   slug: string;
@@ -36,6 +36,9 @@ export async function getStaticProps() {
 const Blog = ({ posts }: Props) => {
   return (
     <>
+      <Head>
+        <title>Blog - Gabriel Lopes</title>
+      </Head>
       <article>
         <Container>
           <h1>Blog</h1>

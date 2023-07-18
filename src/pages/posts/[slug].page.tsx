@@ -55,6 +55,7 @@ export default function PostPage({ frontmatter, content }: ContentPosts) {
           flexDirection: 'column',
           gap: '5em',
           width: '100%',
+          maxWidth: '50em'
         }}
       />
     </div>
